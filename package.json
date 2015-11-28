@@ -1,0 +1,27 @@
+{
+  "name": "local-cast",
+  "version": "0.0.1",
+  "description": "Stream local video/audio content to a Chromecast on your network",
+  "main": "src/js/app.js",
+  "scripts": {
+    "start": "node src/js/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rm-hull/local-cast.git"
+  },
+  "author": "Richard Hull",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "mdns": "^2.2.10",
+    "mime-types": "^2.1.7",
+    "moment": "^2.10.6",
+    "moviedb": "^0.2.2",
+    "vid-streamer": "rm-hull/vid-streamer"
+  }
+}
