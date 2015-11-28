@@ -17,4 +17,11 @@ Clone this repository, and inside the created directory:
     $ sudo apt-get install libavahi-compat-libdnssd-dev
     $ npm install
 
-Create a configuration file, suggest
+
+## TODO
+* Web interface
+* SRT ==> VTT conversion
+* TMDB enrichment/integration
+* Redis cache
+* Auto-scan content
+* Autoscale output
