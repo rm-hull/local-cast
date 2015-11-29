@@ -43,7 +43,7 @@ function onDeviceUp(movie, host, callback) {
         media.tracks = [{
           trackId: 1, // This is an unique ID, used to reference the track
           type: 'TEXT', // Default Media Receiver currently only supports TEXT
-          trackContentId: 'http://vtt.dev.sope.io/', // the URL of the VTT (enabled CORS and the correct ContentType are required)
+          trackContentId: movie.subtitles, // the URL of the VTT (enabled CORS and the correct ContentType are required)
           trackContentType: 'text/vtt', // Currently only VTT is supported
           name: 'English', // a Name for humans
           language: 'en-US', // the language

@@ -4,6 +4,7 @@ const express = require("express");
 const vidStreamer = require("vid-streamer");
 const ip = require("ip");
 
+const subtitle = require('./subtitle');
 const cast = require('./cast');
 
 const newSettings = {
@@ -17,8 +18,29 @@ const newSettings = {
 const addr = ip.address();
 const port = 3000;
 
-const movie = {
-  subtitles: true,
+const movie1 = {
+  url: `http://${addr}:${port}/videos/Jean De Florette.m4v`,
+  subtitles: `http://${addr}:${port}/subtitles/Jean De Florette.srt`,
+  image: 'https://image.tmdb.org/t/p/w185/5NDJTCAFAgMESBHxEqLYd1q5VbQ.jpg',
+  metadata: {
+    poster_path: '/5NDJTCAFAgMESBHxEqLYd1q5VbQ.jpg',
+    adult: false,
+    overview: 'In a rural French village an old man and his only remaining relative cast their covetous eyes on an adjoining vacant property. They need its spring water for growing their flowers, so are dismayed to hear the man who has inherited it is moving in. They block up the spring and watch as their new neighbour tries to keep his crops watered from wells far afield through the hot summer. Though they see his desperate efforts are breaking his health and his wife and daughter\'s hearts they think only of getting the water',
+    release_date: '1986-08-27',
+    genre_ids: [],
+    id: 4480,
+    original_title: 'Jean de Florette',
+    original_language: 'fr',
+    title: 'Jean de Florette',
+    backdrop_path: '/gmv3jkIdbNGJtAclh7Z4l0q2APs.jpg',
+    popularity: 1.238354,
+    vote_count: 23,
+    video: false,
+    vote_average: 7.28
+  }
+};
+
+const movie2 = {
   url: `http://${addr}:${port}/videos/Grand Budapest Hotel.m4v`,
   image: 'https://image.tmdb.org/t/p/w185/nX5XotM9yprCKarRH4fzOq1VM1J.jpg',
   metadata: {
@@ -41,6 +63,8 @@ const movie = {
 
 const app = express();
 app.get("/videos/:movie", vidStreamer.settings(newSettings));
+app.get("/subtitles/:movie", subtitle.settings(newSettings));
 app.listen(port);
 
-cast.movie(movie);
+
+cast.movie(movie2);
