@@ -28,7 +28,7 @@ function onDeviceUp(movie, host, callback) {
         metadata: {
           type: 0,
           metadataType: 0,
-          title: movie.metadata.title,
+          title: `${movie.metadata.title} (${movie.metadata.release_date.slice(0,4)})` ,
           images: [
             { url: movie.image }
           ]
