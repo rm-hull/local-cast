@@ -25,3 +25,8 @@ Clone this repository, and inside the created directory:
 * Redis cache
 * Auto-scan content
 * Autoscale output
+
+
+## Attribution
+
+* Chromecast cast button SVG from https://commons.wikimedia.org/wiki/File:Chromecast_cast_button_icon.svg
