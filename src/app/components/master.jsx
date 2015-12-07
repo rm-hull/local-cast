@@ -162,7 +162,7 @@ const Master = React.createClass({
         left: Spacing.desktopGutter,
       },
       svgLogo: {
-        width: 65,
+        width: 35,
         backgroundColor: Colors.cyan500,
         position: 'absolute',
         top: 20,
@@ -182,7 +182,7 @@ const Master = React.createClass({
         style={styles.svgLogoContainer}
         linkButton={true}
         href="/#/home">
-        <img style={this.prepareStyles(styles.svgLogo)} src="images/local-cast-logo.svg"/>
+        <img style={this.prepareStyles(styles.svgLogo)} src="img/Chromecast_cast_button_icon.svg"/>
         <span style={this.prepareStyles(styles.span)}>local-cast</span>
       </EnhancedButton>) : null;
 

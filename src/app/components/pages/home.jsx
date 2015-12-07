@@ -39,8 +39,10 @@ const HomePage = React.createClass({
         overflow: 'hidden',
       },
       svgLogo: {
-        marginLeft: (window.innerWidth * 0.5) - 130 + 'px',
-        width: 420,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        display: 'block',
+        width: 294 + 'px'
       },
       tagline: {
         margin: '16px auto 0 auto',
@@ -94,7 +96,7 @@ const HomePage = React.createClass({
 
     return (
       <FullWidthSection style={styles.root}>
-          <img style={styles.svgLogo} src="images/local-cast-logo.svg" />
+          <img style={styles.svgLogo} src="img/Chromecast_cast_button_icon.svg" />
           <div style={styles.tagline}>
             <h1 style={styles.h1}>local-cast</h1>
             <h2 style={styles.h2}>
