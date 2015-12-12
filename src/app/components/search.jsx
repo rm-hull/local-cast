@@ -93,8 +93,10 @@ export default class Search extends React.Component {
       <Paper style={{padding: 10}}>
         <p>Search for {pluralize(this.props.type)} by entering some keywords</p>
 
+        <!-- might be better to show all, and just get the server side to do autocompletion -->
         <AutoComplete
           ref="autocomplete"
+          filter={(searchText, key) => key.toLowerCase().includes(searchText.toLowerCase())}
           hintText={`${capitalize(this.props.type)} keywords`}
           dataSource={this.state.autoComplete.dataSource}
           errorText={this.state.autoComplete.error}

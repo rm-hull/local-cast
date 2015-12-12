@@ -14,7 +14,7 @@ function endpoints(request, body) {
   let query = querystring.parse(url.parse(request.url).query);
 
   return [
-  {
+    {
       method: "GET",
       url: "^/asset",
       status: error ? 500 : 200,
@@ -23,6 +23,16 @@ function endpoints(request, body) {
         error
           ? {"error" : "Something went wrong"}
           : require(`./data/${query.id}.json`)
+    },
+    {
+      method: "GET",
+      url: "^/suggest",
+      status: error ? 500 : 200,
+      headers: {"Content-Type": "application/json"},
+      response: () =>
+        error
+          ? {"error" : "Something went wrong"}
+          : require(`./data/suggestions.json`)
     },
     {
       method: "GET",
