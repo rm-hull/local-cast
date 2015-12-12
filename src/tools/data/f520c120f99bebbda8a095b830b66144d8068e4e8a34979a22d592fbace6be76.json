@@ -1,0 +1,60 @@
+{
+   "matches" : [
+      {
+         "vote_average" : 7.51,
+         "popularity" : 2.735072,
+         "id" : 115,
+         "overview" : "Jeffrey \"The Dude\" Lebowski, a Los Angeles slacker who only wants to bowl and drink white Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange series of events involving nihilists, adult film producers, ferrets, errant toes, and large sums of money.",
+         "backdrop_path" : "/6RK0NV0CuyRZESciuDI9veRXEgf.jpg",
+         "poster_path" : "/aHaVjVoXeNanfwUwQ92SG7tosFM.jpg",
+         "adult" : false,
+         "video" : false,
+         "original_title" : "The Big Lebowski",
+         "vote_count" : 1137,
+         "genre_ids" : [
+            35,
+            80
+         ],
+         "title" : "The Big Lebowski",
+         "original_language" : "en",
+         "release_date" : "1998-03-06"
+      },
+      {
+         "vote_count" : 1,
+         "genre_ids" : [],
+         "title" : "The Big Lebowski 2",
+         "release_date" : "2011-03-29",
+         "original_language" : "en",
+         "adult" : false,
+         "video" : false,
+         "original_title" : "The Big Lebowski 2",
+         "overview" : "This summer, see your favorite Coen Brothers' cult classic in a whole new way. Kind of.",
+         "backdrop_path" : null,
+         "poster_path" : null,
+         "vote_average" : 0,
+         "popularity" : 1.001219,
+         "id" : 249110
+      }
+   ],
+   "root" : "/mnt/atrax/media/Videos/Films",
+   "id" : "f520c120f99bebbda8a095b830b66144d8068e4e8a34979a22d592fbace6be76",
+   "fileStats" : {
+      "blksize" : 131072,
+      "mode" : 33204,
+      "birthtime" : "2014-06-14T21:04:59.690Z",
+      "type" : "file",
+      "blocks" : 2852256,
+      "dev" : 41,
+      "atime" : "2015-11-29T16:47:10.387Z",
+      "ctime" : "2014-06-14T21:04:59.690Z",
+      "mtime" : "2014-06-14T21:04:59.690Z",
+      "size" : 1460347450,
+      "name" : "The Big Lebowski.m4v",
+      "ino" : 73290977,
+      "gid" : 1000,
+      "nlink" : 1,
+      "rdev" : 0,
+      "uid" : 1000
+   },
+   "crawled" : "2015-11-29T21:40:19.418Z"
+}

@@ -1,0 +1,150 @@
+{
+   "crawled" : "2015-11-29T21:40:19.596Z",
+   "id" : "679bacb4196e8ae23aced5809d2395ef118c4bd68487c61ea6d41876a1330311",
+   "matches" : [
+      {
+         "adult" : false,
+         "popularity" : 1.716367,
+         "title" : "The Reader",
+         "id" : 8055,
+         "backdrop_path" : "/nsqs8dV3DBeheey1qqnbTD4LSHW.jpg",
+         "vote_average" : 6.86,
+         "vote_count" : 274,
+         "genre_ids" : [
+            18,
+            10749
+         ],
+         "video" : false,
+         "release_date" : "2008-12-10",
+         "original_title" : "The Reader",
+         "original_language" : "en",
+         "overview" : "Tells the story of Michael Berg, a German lawyer who as a teenager in the late 1950s had an affair with an older woman, Hanna, who then disappeared only to resurface years later as one of the defendants in a war crimes trial stemming from her actions as a concentration camp guard late in the war. He alone realizes that Hanna is illiterate and may be concealing that at the expense of her freedom.",
+         "poster_path" : "/mEqgCzhGO3gi9DkevgM7N6a5mY3.jpg"
+      },
+      {
+         "id" : 26374,
+         "title" : "The Map Reader",
+         "popularity" : 1.000887,
+         "adult" : false,
+         "overview" : "Small-town New Zealand comedy-drama about Michael (Jordan Selwyn) - a 16-year-old whose passion for maps helps him escape his ordinary life and enjoy a state of isolation from those around him. But there are three women he can’t shut out – his single mother Amelia, a blind 20-year-old called Mary and Alison , a friend whose ‘grace betrays darker secrets’ apparently.",
+         "poster_path" : "/pNkRQBsj3LLmrvCmuqRMGJmcBWD.jpg",
+         "original_language" : "en",
+         "original_title" : "The Map Reader",
+         "vote_count" : 0,
+         "vote_average" : 0,
+         "genre_ids" : [
+            18
+         ],
+         "backdrop_path" : "/13WDCRxnAC6TczSXgNC75dp5giI.jpg",
+         "release_date" : "2008-10-18",
+         "video" : false
+      },
+      {
+         "title" : "The Mind Reader",
+         "id" : 126122,
+         "adult" : false,
+         "popularity" : 1.000267,
+         "original_language" : "en",
+         "original_title" : "The Mind Reader",
+         "poster_path" : "/iVv5kG4Q813CQexCp6FYTrYR6iG.jpg",
+         "overview" : "Chandler, a con-man, and his helper Frank decide to create a clairvoyant act for the carny circuit, as a little research reveals Ameicans spent $125 million on mind-readers and astrology. The carny, renamed Chandra, falls for one of his marks, Sylvia, but their love is tested when he brings tragedy to other peoples' lives and she asks him to go straight.",
+         "release_date" : "1933-04-01",
+         "video" : false,
+         "vote_average" : 0,
+         "vote_count" : 0,
+         "backdrop_path" : "/xI9HLR57bIWfZEBSVF5bGsLO7AW.jpg",
+         "genre_ids" : [
+            18,
+            9648
+         ]
+      },
+      {
+         "vote_average" : 6.17,
+         "backdrop_path" : "/tIaOCVMbMyHvXQk78e81SuYn9mc.jpg",
+         "vote_count" : 6,
+         "genre_ids" : [
+            36
+         ],
+         "video" : false,
+         "release_date" : "2013-09-11",
+         "original_language" : "ko",
+         "original_title" : "관상",
+         "poster_path" : "/dnZHyYwX5hUFu5NEDHmv83R4dOn.jpg",
+         "overview" : "Nae-kyung, the most skillful face reader in Joseon dynasty, was living in seclusion when he was offered a lucrative partnership by Yeon-hong, a Korean geisha. Nae-kyung accepts the proposal to read the faces of Yeon-hong’s guests only to get involved in a murder case. With his face reading skills, Nae-kyung successfully identifies the murderer and his skills are soon acknowledged by King Moonjong who orders him to identify the potential traitors who threaten his reign. However after the unexpected death of Moonjong, Nae-kyung is courted by Grand Prince Sooyang who yearns to become King himself by killing the young successor Danjong. Nae-kyung decides to keep his loyalty to the late King and help KIM Jong-seo protect the young King which forces him into the biggest power struggle in the history of the Joseon dynasty.",
+         "adult" : false,
+         "popularity" : 1.08283,
+         "title" : "The Face Reader",
+         "id" : 220176
+      },
+      {
+         "vote_average" : 0,
+         "backdrop_path" : null,
+         "vote_count" : 0,
+         "genre_ids" : [],
+         "video" : true,
+         "release_date" : "2004-01-01",
+         "original_language" : "en",
+         "original_title" : "Reader Rabbit: The Great Alphabet Race",
+         "poster_path" : null,
+         "overview" : "Kids get extra help learning their ABCs with this video starring Reader Rabbit, the friendly instructor of the popular children's educational software. Appropriate for children ages 3-6, the program combines an engaging mix of animation, storytelling and interactive games to teach alphabet basics. Lessons focus on learning the alphabet, letter names and sounds, the difference between upper- and lower-case letters, new vocabulary and more.",
+         "adult" : false,
+         "popularity" : 1.000301,
+         "title" : "Reader Rabbit: The Great Alphabet Race",
+         "id" : 311602
+      },
+      {
+         "adult" : false,
+         "popularity" : 1.000138,
+         "title" : "The Reader",
+         "id" : 49693,
+         "vote_average" : 2.83,
+         "vote_count" : 3,
+         "genre_ids" : [
+            35,
+            18
+         ],
+         "backdrop_path" : "/rdFjIHZsrNL7S2cfregKrM7C59b.jpg",
+         "video" : false,
+         "release_date" : "1988-08-17",
+         "original_language" : "en",
+         "original_title" : "La lectrice",
+         "poster_path" : "/gA99CK1shgLyEpRBTabXwUJLYie.jpg",
+         "overview" : "A multi-faceted film based on Raymond Jean's novel \"La Lectrice\". Constance (Miou-Miou) reads the novel aloud in bed to her lover. Inspired by the story of Marie, a woman who advertises her services as a reader of literature, Constance decides to do the same. Here the film takes on a kaleidoscopic effect as the lives of Constance and Marie become merged, making it hard to distinguish what is real and what is fantasy. This structure is further complicated when the lives of Constance's clients become tangled with the stories she reads. The film is interspersed with readings from well known literary sources as diverse as, amongst others, Baudelaire, Duras, Tolstoy, Lewis Carroll and de Sade's \"120 days...\""
+      },
+      {
+         "popularity" : 1,
+         "adult" : false,
+         "id" : 185778,
+         "title" : "Rock 'N Learn: Phonics Easy Readers",
+         "vote_count" : 0,
+         "vote_average" : 0,
+         "backdrop_path" : null,
+         "genre_ids" : [],
+         "release_date" : "",
+         "video" : false,
+         "poster_path" : "/5BJQDf3JXYkxh2xNb3nKmKwlppE.jpg",
+         "overview" : "Children ages 6 and up can teach themselves to read with a self-paced, kid-friendly program that has twelve entertaining stories that employ fun characters and build in sequence from the simple to the more complex. Kids have time to read each screen before hearing a voice read the highlighted words. In addition to community library children's multi-media collections, these titles (Alphabet Circus Video, Nursery Rhymes Video, Getting Ready for Kindergarten Video, and Phonics Easy Readers on DVD) are very highly recommended supplements for preschool, daycare, home schooling, and traditional curriculums. --Children's Bookwatch, September 2005",
+         "original_title" : "Rock 'N Learn: Phonics Easy Readers",
+         "original_language" : "en"
+      }
+   ],
+   "fileStats" : {
+      "mtime" : "2015-01-11T12:42:02.976Z",
+      "nlink" : 1,
+      "name" : "The Reader.m4v",
+      "blocks" : 1971352,
+      "ino" : 73291001,
+      "blksize" : 131072,
+      "atime" : "2015-11-29T16:47:11.351Z",
+      "gid" : 1000,
+      "type" : "file",
+      "ctime" : "2015-01-11T17:06:43.701Z",
+      "birthtime" : "2015-01-11T17:06:43.701Z",
+      "mode" : 33204,
+      "uid" : 1000,
+      "size" : 1009328071,
+      "rdev" : 0,
+      "dev" : 41
+   },
+   "root" : "/mnt/atrax/media/Videos/Films"
+}
