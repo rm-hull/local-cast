@@ -4,6 +4,7 @@ import React from 'react';
 import Paper from 'material-ui/lib/paper';
 import AutoComplete from 'material-ui/lib/auto-complete';
 import RaisedButton from 'material-ui/lib/raised-button';
+import FlatButton from 'material-ui/lib/flat-button';
 import GridList from 'material-ui/lib/grid-list/grid-list';
 import GridTile from 'material-ui/lib/grid-list/grid-tile';
 import IconButton from 'material-ui/lib/icon-button';
@@ -102,7 +103,7 @@ export default class Search extends React.Component {
           errorText={this.state.autoComplete.error}
           onUpdateInput={this._onAutoComplete}/>
 
-        <RaisedButton label="Search" onTouchTap={this._onSearch}/>
+        <FlatButton label="Search" onTouchTap={this._onSearch}/>
 
         <GridList
           cellHeight={300}
