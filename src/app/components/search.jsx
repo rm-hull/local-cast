@@ -13,7 +13,7 @@ import StarBorder from 'material-ui/lib/svg-icons/toggle/star-border';
 import {capitalize, pluralize} from 'inflection';
 import request from 'superagent';
 
-import noCache from '../../../utils/no-cache';
+import noCache from '../utils/no-cache';
 
 const img_prefix = "https://image.tmdb.org/t/p/w185"
 
@@ -23,9 +23,16 @@ export default class Search extends React.Component {
   constructor() {
     super();
     this._onSearch = this._onSearch.bind(this);
+    this._onAutoComplete = this._onAutoComplete.bind(this);
     this.state = {
-      results: [],
-      error: null
+      autoComplete: {
+        dataSource: [],
+        error: null
+      },
+      search: {
+        results: [],
+        error: null
+      }
     }
   }
 
@@ -35,18 +42,47 @@ export default class Search extends React.Component {
 
     request
       .get("search")
-      .query({terms: searchTerms})
       .use(noCache)
+      .query({terms: searchTerms, type: this.props.type})
       .end((err, res) => {
         if (err) {
           this.setState({
-            results: [],
-            error: err
+            search: {
+              results: [],
+              error: `${err.status}: ${err.message}`
+            }
           });
         } else {
           this.setState({
-            results: res.body,
-            error: null
+            search: {
+              results: res.body,
+              error: null
+            }
+          });
+        }
+      });
+  }
+
+  _onAutoComplete(text) {
+
+    request
+      .get("suggest")
+      .use(noCache)
+      .query({text: text})
+      .end((err, res) => {
+        if (err) {
+          this.setState({
+            autoComplete: {
+              dataSource: [],
+              error: `${err.status}: ${err.message}`
+            }
+          });
+        } else {
+          this.setState({
+            autoComplete: {
+              dataSource: res.body,
+              error: null
+            }
           });
         }
       });
@@ -60,26 +96,30 @@ export default class Search extends React.Component {
         <AutoComplete
           ref="autocomplete"
           hintText={`${capitalize(this.props.type)} keywords`}
-          dataSource={["The Grand Budapest Hotel", "Jean de Florette", "Interstellar"]} />
+          dataSource={this.state.autoComplete.dataSource}
+          errorText={this.state.autoComplete.error}
+          onUpdateInput={this._onAutoComplete}/>
 
         <RaisedButton label="Search" onTouchTap={this._onSearch}/>
 
         <GridList
-          cellHeight={278}
-          cols={3}
+          cellHeight={300}
+          cols={4}
           style={{height: 640, overflowY: 'auto'}} >
           {
-            this.state.results.map((media, index) => {
+            this.state.search.results.map((media, index) => {
               let metadata = media.metadata || media.matches[0];
               return (
                 <GridTile
                   key={index}
                   style={{cursor: "pointer"}}
-                  title={metadata.title}
-                  actionIcon={media.matches ? <IconButton><StarBorder color="white"/></IconButton> : false}
-                  subtitle={metadata.release_date.slice(0, 4)}>
+                  title={<strong>{metadata.title}</strong>}
+                  actionIcon={media.matches ? <IconButton><StarBorder color="white"/></IconButton> : <noscript/>}
+                  subtitle={metadata.release_date.slice(0, 4)}
+                  titleBackground="rgba(0, 0, 0, 0.7)">
                   <Link to={`/media/${this.props.type}/${media.id}`}>
                     <img
+                      style={{width: '100%'}}
                       onError={() => this.src = "img/missing.png"}
                       src={img_prefix + metadata.poster_path} />
                   </Link>

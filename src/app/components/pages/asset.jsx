@@ -1,7 +1,7 @@
 import React from 'react';
 import request from 'superagent';
 
-import noCache from '../../../utils/no-cache';
+import noCache from '../../utils/no-cache';
 
 export default class AssetPage extends React.Component {
 
@@ -29,8 +29,8 @@ export default class AssetPage extends React.Component {
   _fetchAsset(id) {
     request
       .get("asset")
-      .query({id: id})
       .use(noCache)
+      .query({id: id})
       .end((err, res) => {
 
         if (err) {

@@ -6,9 +6,9 @@ import Master from './components/master';
 import Home from './components/pages/home';
 
 import MediaTypes from './components/pages/media-types';
-import VideoSearch from './components/pages/components/video-search';
-import AudioSearch from './components/pages/components/audio-search';
-import Asset from './components/pages/components/asset';
+import VideoSearch from './components/pages/video-search';
+import AudioSearch from './components/pages/audio-search';
+import Asset from './components/pages/asset';
 
 /**
  * Routes: https://github.com/rackt/react-router/blob/master/docs/api/components/Route.md
