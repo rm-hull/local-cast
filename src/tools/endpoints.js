@@ -6,12 +6,26 @@ var fs = require("fs");
 var is = require("is");
 var prettyjson = require('prettyjson');
 
+
 function endpoints(request, body) {
-  var error = Math.random() < 0.01;
-  var choice = 1; //Math.floor(Math.random() * 2) + 1;
-  var errorChoice = Math.floor(Math.random() * 2) + 1;
+  let error = Math.random() < 0.01;
+  let choice = 1; //Math.floor(Math.random() * 2) + 1;
+  let errorChoice = Math.floor(Math.random() * 2) + 1;
+
+  let query = url.parse(request.url).query;
+  console.log(query);
 
   return [
+  {
+      method: "GET",
+      url: "^/asset",
+      status: error ? 500 : 200,
+      headers: {"Content-Type": "application/json"},
+      response: () =>
+        error
+          ? {"error" : "Something went wrong"}
+          : require(`./data/${query.id}.json`)
+    },
     {
       method: "GET",
       url: "^/search",
@@ -40,14 +54,14 @@ function isJSON(endpoint) {
 
 function httpInterceptor(req, res, next) {
 
-  var body = "";
+  let body = "";
   req.on("data", (chunk) => body += chunk);
   req.on("end", () => {
 
-    var bodyJSON = body ? JSON.parse(body) : {};
-    var matched = false;
+    let bodyJSON = body ? JSON.parse(body) : {};
+    let matched = false;
     endpoints(req, bodyJSON).forEach((endpoint) => {
-      var parsed = url.parse(req.url);
+      let parsed = url.parse(req.url);
 
       if (!matched &&
           endpoint.method === req.method &&
@@ -62,8 +76,8 @@ function httpInterceptor(req, res, next) {
 
         setTimeout(() => {
           if (res) {
-            var response = is.fn(endpoint.response) ? endpoint.response() : endpoint.response;
-            var result = isJSON(endpoint) ? JSON.stringify(response) : response;
+            let response = is.fn(endpoint.response) ? endpoint.response() : endpoint.response;
+            let result = isJSON(endpoint) ? JSON.stringify(response) : response;
             gutil.log(`Sending: ${gutil.colors.cyan(endpoint.status)}\n${prettyjson.render(JSON.parse(result))}`);
             res.writeHead(endpoint.status, endpoint.headers);
             res.write(result || "");

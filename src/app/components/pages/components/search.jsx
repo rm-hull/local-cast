@@ -6,6 +6,9 @@ import AutoComplete from 'material-ui/lib/auto-complete';
 import RaisedButton from 'material-ui/lib/raised-button';
 import GridList from 'material-ui/lib/grid-list/grid-list';
 import GridTile from 'material-ui/lib/grid-list/grid-tile';
+import IconButton from 'material-ui/lib/icon-button';
+import { Router, Route, Link } from 'react-router'
+import StarBorder from 'material-ui/lib/svg-icons/toggle/star-border';
 
 import {capitalize, pluralize} from 'inflection';
 import request from 'superagent';
@@ -66,13 +69,23 @@ export default class Search extends React.Component {
           cols={3}
           style={{height: 640, overflowY: 'auto'}} >
           {
-            this.state.results.map((media, index) =>
-              <GridTile
-                key={index}
-                title={media.metadata.title}
-                subtitle={media.metadata.release_date.slice(0, 4)}>
-                  <img src={img_prefix + media.metadata.poster_path} />
-              </GridTile>)
+            this.state.results.map((media, index) => {
+              let metadata = media.metadata || media.matches[0];
+              return (
+                <GridTile
+                  key={index}
+                  style={{cursor: "pointer"}}
+                  title={metadata.title}
+                  actionIcon={media.matches ? <IconButton><StarBorder color="white"/></IconButton> : false}
+                  subtitle={metadata.release_date.slice(0, 4)}>
+                  <Link to={`/media/${this.props.type}/${media.id}`}>
+                    <img
+                      onError={() => this.src = "img/missing.png"}
+                      src={img_prefix + metadata.poster_path} />
+                  </Link>
+                </GridTile>
+              );
+            })
           }
         </GridList>
       </Paper>

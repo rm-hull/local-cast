@@ -6,7 +6,9 @@ import Master from './components/master';
 import Home from './components/pages/home';
 
 import MediaTypes from './components/pages/media-types';
-import AppBar from './components/pages/components/app-bar';
+import VideoSearch from './components/pages/components/video-search';
+import AudioSearch from './components/pages/components/audio-search';
+import Asset from './components/pages/components/asset';
 
 /**
  * Routes: https://github.com/rackt/react-router/blob/master/docs/api/components/Route.md
@@ -22,9 +24,11 @@ const AppRoutes = (
     <Route path="home" component={Home} />
 
     <Redirect from="media" to="/media/video" />
-    <Route path="media" component={MediaTypes}>
-      <Route path="video" component={AppBar} />
-      <Route path="audio" component={AppBar} />
+    <Route path="media" component={MediaTypes} >
+      <Route path="video" component={VideoSearch} />
+      <Route path="audio" component={AudioSearch} />
+      <Route path="video/:assetId" component={Asset} />
+      <Route path="audio/:assetId" component={Asset} />
     </Route>
 
     <IndexRoute component={Home}/>
