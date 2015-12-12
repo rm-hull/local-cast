@@ -1,7 +1,16 @@
 import React from 'react';
+import Card from 'material-ui/lib/card/card';
+import CardActions from 'material-ui/lib/card/card-actions';
+import CardHeader from 'material-ui/lib/card/card-header';
+import CardMedia from 'material-ui/lib/card/card-media';
+import CardText from 'material-ui/lib/card/card-text';
+import CardTitle from 'material-ui/lib/card/card-title';
+import FlatButton from 'material-ui/lib/flat-button';
+
 import request from 'superagent';
 
 import noCache from '../../utils/no-cache';
+const img_prefix = "https://image.tmdb.org/t/p/w780"
 
 export default class AssetPage extends React.Component {
 
@@ -9,13 +18,12 @@ export default class AssetPage extends React.Component {
     super();
     this._fetchAsset = this._fetchAsset.bind(this);
     this.state = {
-      asset: null,
+      asset: {},
       error: null
     }
   }
 
   componentDidMount() {
-    console.log("componentDidMount >> assetId:" + this.props.params.assetId);
     this._fetchAsset(this.props.params.assetId)
   }
 
@@ -48,11 +56,26 @@ export default class AssetPage extends React.Component {
   }
 
   render() {
+    if (!this.state.asset.id) {
+      return false;
+    }
+
+    let metadata = this.state.asset.metadata || this.state.asset.matches[0];
     return (
-      <div>
-        <p>AssetId: {this.props.params.assetId}</p>
-        <p>Error: {this.state.error}</p>
-      </div>
+      <Card>
+        <CardMedia
+          overlay={<CardTitle
+                     title={<strong>{metadata.title}</strong>}
+                     subtitle={metadata.release_date.slice(0, 4)}/>}>
+          <img src={img_prefix + metadata.backdrop_path}/>
+        </CardMedia>
+        <CardActions>
+          <span>Cast to</span>
+          <FlatButton label="Living Room"/>
+          <FlatButton label="Office"/>
+        </CardActions>
+        <CardText>{metadata.overview}</CardText>
+      </Card>
     );
   }
 }
