@@ -11,9 +11,9 @@ in your local network, and allows them to be cast to a connected
 **local-cast** exposes a material-ui based web interface (using React) to
 allow you to select and cast movies, as well as a remote control.
 
-![search page](https://raw.githubusercontent.com/rm-hull/local-host/master/docs/screenshots/search.jpg)
+![search page](https://raw.githubusercontent.com/rm-hull/local-cast/master/doc/screenshots/search.jpg)
 
-![movie page](https://raw.githubusercontent.com/rm-hull/local-host/master/docs/screenshots/movie.jpg)
+![movie page](https://raw.githubusercontent.com/rm-hull/local-cast/master/doc/screenshots/movie.jpg)
 
 ## Setup
 
