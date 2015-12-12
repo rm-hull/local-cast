@@ -1,3 +1,5 @@
+"use strict";
+
 import React from 'react';
 import Card from 'material-ui/lib/card/card';
 import CardActions from 'material-ui/lib/card/card-actions';
@@ -6,6 +8,8 @@ import CardMedia from 'material-ui/lib/card/card-media';
 import CardText from 'material-ui/lib/card/card-text';
 import CardTitle from 'material-ui/lib/card/card-title';
 import FlatButton from 'material-ui/lib/flat-button';
+
+import Image from '../image';
 
 import request from 'superagent';
 
@@ -67,7 +71,9 @@ export default class AssetPage extends React.Component {
           overlay={<CardTitle
                      title={<strong>{metadata.title}</strong>}
                      subtitle={metadata.release_date.slice(0, 4)}/>}>
-          <img src={img_prefix + metadata.backdrop_path}/>
+          <Image
+            src={img_prefix + metadata.backdrop_path}
+            missing="http://lorempixel.com/g/780/439/abstract/"/>
         </CardMedia>
         <CardActions>
           <span>Cast to</span>

@@ -14,6 +14,7 @@ import {capitalize, pluralize} from 'inflection';
 import request from 'superagent';
 
 import noCache from '../utils/no-cache';
+import Image from './image';
 
 const img_prefix = "https://image.tmdb.org/t/p/w185"
 
@@ -119,9 +120,8 @@ export default class Search extends React.Component {
                   subtitle={metadata.release_date.slice(0, 4)}
                   titleBackground="rgba(0, 0, 0, 0.7)">
                   <Link to={`/media/${this.props.type}/${media.id}`}>
-                    <img
+                    <Image
                       style={{width: '100%'}}
-                      onError={() => this.src = "img/missing.png"}
                       src={img_prefix + metadata.poster_path} />
                   </Link>
                 </GridTile>
