@@ -1,0 +1,41 @@
+{
+   "root" : "/mnt/atrax/media/Videos/Films",
+   "metadata" : {
+      "poster_path" : "/5NDJTCAFAgMESBHxEqLYd1q5VbQ.jpg",
+      "vote_average" : 7.28,
+      "genre_ids" : [
+         18
+      ],
+      "id" : 4480,
+      "original_title" : "Jean de Florette",
+      "adult" : false,
+      "original_language" : "fr",
+      "vote_count" : 23,
+      "popularity" : 1.319721,
+      "release_date" : "1986-08-27",
+      "backdrop_path" : "/gmv3jkIdbNGJtAclh7Z4l0q2APs.jpg",
+      "title" : "Jean de Florette",
+      "overview" : "In a rural French village an old man and his only remaining relative cast their covetous eyes on an adjoining vacant property. They need its spring water for growing their flowers, so are dismayed to hear the man who has inherited it is moving in. They block up the spring and watch as their new neighbour tries to keep his crops watered from wells far afield through the hot summer. Though they see his desperate efforts are breaking his health and his wife and daughter's hearts they think only of getting the water",
+      "video" : false
+   },
+   "fileStats" : {
+      "nlink" : 1,
+      "type" : "file",
+      "blocks" : 2672248,
+      "gid" : 100,
+      "uid" : 1000,
+      "ino" : 73290950,
+      "name" : "Jean De Florette.m4v",
+      "atime" : "2015-11-29T00:08:19.065Z",
+      "ctime" : "2015-11-29T00:08:09.298Z",
+      "size" : 1368185727,
+      "blksize" : 131072,
+      "mtime" : "2014-04-22T22:24:34.990Z",
+      "rdev" : 0,
+      "mode" : 33188,
+      "dev" : 41,
+      "birthtime" : "2015-11-29T00:08:09.298Z"
+   },
+   "id" : "30ffcb8be3a214972c7a3a937c3cfd77288b8927fb491f41fd914da4e9401d27",
+   "crawled" : "2015-11-29T21:40:19.037Z"
+}

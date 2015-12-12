@@ -1,0 +1,41 @@
+{
+   "fileStats" : {
+      "nlink" : 1,
+      "atime" : "2015-03-29T19:46:24.731Z",
+      "blksize" : 131072,
+      "ino" : 73269840,
+      "type" : "file",
+      "ctime" : "2012-11-04T17:11:04.182Z",
+      "uid" : 1000,
+      "size" : 71602580,
+      "birthtime" : "2012-11-04T17:11:04.182Z",
+      "gid" : 100,
+      "dev" : 41,
+      "mtime" : "2011-11-19T14:54:09.916Z",
+      "name" : "Mouse Cleaning.avi",
+      "blocks" : 139856,
+      "mode" : 33277,
+      "rdev" : 0
+   },
+   "id" : "5ee2f9c4c6f63dbfd440870dfc44c0055cb0c191907b712beb27d363c2b9e8b7",
+   "metadata" : {
+      "genre_ids" : [
+         16
+      ],
+      "adult" : false,
+      "poster_path" : "/o6OaCeUhCwE04wDDdGFsNDtdBXT.jpg",
+      "original_title" : "Mouse Cleaning",
+      "vote_count" : 2,
+      "popularity" : 1.00019,
+      "video" : false,
+      "original_language" : "en",
+      "title" : "Mouse Cleaning",
+      "id" : 40024,
+      "overview" : "Mammy Two-Shoes threatens to throw Tom out of the house if he makes a mess. Jerry sees an opportunity to rid himself of his feline nemesis.",
+      "release_date" : "1948-01-01",
+      "vote_average" : 4.25,
+      "backdrop_path" : "/n1eFvhwnboAW6dl5Yffyb2WYw82.jpg"
+   },
+   "crawled" : "2015-11-29T21:40:21.950Z",
+   "root" : "/mnt/host/media/Videos/Films/Kids/Tom and Jerry/Volume 03"
+}

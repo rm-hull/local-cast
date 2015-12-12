@@ -1,0 +1,43 @@
+{
+   "crawled" : "2015-11-29T21:40:18.682Z",
+   "metadata" : {
+      "original_title" : "Biloxi Blues",
+      "poster_path" : "/6Xy8MrvTCF0PMWaAGeQjdpDgjYT.jpg",
+      "id" : 19382,
+      "video" : false,
+      "vote_average" : 5.89,
+      "adult" : false,
+      "original_language" : "en",
+      "genre_ids" : [
+         35,
+         18,
+         10749
+      ],
+      "overview" : "During the Second World War, Eugene enlists in the US Army during the last year of the War and is sent to basic training in Biloxi Mississippi. There he must live with a variety of fellow soldiers while enduring the whims of a mentally unstable drill sergeant.",
+      "popularity" : 1.131138,
+      "backdrop_path" : "/p26oCe6MLk1puMwT7PFmglFWIE8.jpg",
+      "title" : "Biloxi Blues",
+      "vote_count" : 14,
+      "release_date" : "1988-03-25"
+   },
+   "fileStats" : {
+      "dev" : 41,
+      "rdev" : 0,
+      "birthtime" : "2014-05-11T15:24:46.810Z",
+      "type" : "file",
+      "blksize" : 131072,
+      "atime" : "2015-11-29T16:47:06.836Z",
+      "gid" : 1000,
+      "ctime" : "2014-05-11T15:24:46.810Z",
+      "name" : "Biloxi Blues.m4v",
+      "blocks" : 1834696,
+      "mode" : 33204,
+      "uid" : 1000,
+      "nlink" : 1,
+      "mtime" : "2014-05-11T15:24:46.810Z",
+      "ino" : 73290956,
+      "size" : 939357187
+   },
+   "root" : "/mnt/atrax/media/Videos/Films",
+   "id" : "46fbffbaec5d98a0b3811ef3881478c4befb06d32b4928d5296e13cf464b1c6b"
+}

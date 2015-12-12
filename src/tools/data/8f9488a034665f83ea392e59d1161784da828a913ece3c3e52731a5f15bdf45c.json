@@ -1,0 +1,44 @@
+{
+   "crawled" : "2015-11-29T21:40:19.795Z",
+   "fileStats" : {
+      "ctime" : "2012-11-04T17:00:52.674Z",
+      "rdev" : 0,
+      "mtime" : "2011-11-19T14:29:54.996Z",
+      "atime" : "2015-08-14T18:38:02.586Z",
+      "name" : "Fantastic Mr Fox.m4v",
+      "type" : "file",
+      "uid" : 1000,
+      "ino" : 73269650,
+      "blocks" : 1439112,
+      "dev" : 41,
+      "nlink" : 1,
+      "size" : 736819644,
+      "blksize" : 131072,
+      "mode" : 33188,
+      "gid" : 100,
+      "birthtime" : "2012-11-04T17:00:52.674Z"
+   },
+   "metadata" : {
+      "original_language" : "en",
+      "release_date" : "2009-11-13",
+      "backdrop_path" : "/uxQ1n8yLqRZgnrimiBXJ5rsaa.jpg",
+      "title" : "Fantastic Mr. Fox",
+      "vote_count" : 465,
+      "id" : 10315,
+      "vote_average" : 7.35,
+      "popularity" : 2.447986,
+      "adult" : false,
+      "genre_ids" : [
+         12,
+         16,
+         35,
+         10751
+      ],
+      "poster_path" : "/750pfEttsYAVmynRg2vmt1AXh4q.jpg",
+      "overview" : "The Fantastic Mr. Fox bored with his current life, plans a heist against the three local farmers. The farmers, tired of sharing their chickens with the sly fox, seek revenge against him and his family.",
+      "video" : false,
+      "original_title" : "Fantastic Mr. Fox"
+   },
+   "id" : "8f9488a034665f83ea392e59d1161784da828a913ece3c3e52731a5f15bdf45c",
+   "root" : "/mnt/host/media/Videos/Films/Kids"
+}

@@ -1,0 +1,42 @@
+{
+   "fileStats" : {
+      "ino" : 73291000,
+      "type" : "file",
+      "gid" : 1000,
+      "size" : 435163752,
+      "birthtime" : "2015-01-15T19:38:54.423Z",
+      "nlink" : 1,
+      "rdev" : 0,
+      "blocks" : 849944,
+      "name" : "Grand Budapest Hotel.m4v",
+      "blksize" : 131072,
+      "uid" : 1000,
+      "ctime" : "2015-01-15T19:38:54.423Z",
+      "mode" : 33204,
+      "mtime" : "2015-01-15T19:38:54.423Z",
+      "atime" : "2015-11-29T00:25:48.366Z",
+      "dev" : 41
+   },
+   "metadata" : {
+      "backdrop_path" : "/x5X14fl677xQ8r2R6mwApDKUWkr.jpg",
+      "original_title" : "The Grand Budapest Hotel",
+      "popularity" : 4.184362,
+      "title" : "The Grand Budapest Hotel",
+      "poster_path" : "/nX5XotM9yprCKarRH4fzOq1VM1J.jpg",
+      "video" : false,
+      "overview" : "The Grand Budapest Hotel tells of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee who becomes his trusted protégé. The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century.",
+      "vote_average" : 7.91,
+      "genre_ids" : [
+         35,
+         18
+      ],
+      "vote_count" : 1687,
+      "id" : 120467,
+      "adult" : false,
+      "original_language" : "en",
+      "release_date" : "2014-03-07"
+   },
+   "id" : "6aa3fa37b0ecc0b34283eda6036e8ea1498c95abd14a403e3b8e0c74f6a52999",
+   "crawled" : "2015-11-29T21:40:18.943Z",
+   "root" : "/mnt/atrax/media/Videos/Films"
+}

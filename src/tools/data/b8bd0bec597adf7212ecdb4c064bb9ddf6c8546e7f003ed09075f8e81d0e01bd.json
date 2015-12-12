@@ -1,0 +1,43 @@
+   {
+       "id":"b8bd0bec597adf7212ecdb4c064bb9ddf6c8546e7f003ed09075f8e81d0e01bd",
+       "root":"/mnt/host/media/Videos/Films",
+       "fileStats":{
+          "dev":41,
+          "mode":33188,
+          "nlink":1,
+          "uid":1000,
+          "gid":100,
+          "rdev":0,
+          "blksize":131072,
+          "ino":73290959,
+          "size":1135324321,
+          "blocks":2217440,
+          "atime":"2015-11-29T16:47:08.371Z",
+          "mtime":"2014-05-19T22:26:50.882Z",
+          "ctime":"2014-05-19T22:26:50.882Z",
+          "birthtime":"2014-05-19T22:26:50.882Z",
+          "name":"Italian for beginners.m4v",
+          "type":"file"
+       },
+       "crawled":"2015-11-29T21:40:19.027Z",
+       "metadata":{
+          "poster_path":"gasBxCaQCiqayymEPdWqQULBxUDF.jpg",
+          "adult":false,
+          "overview":"This fifth Danish Dogme film is about six vulnerable individuals whose lives are interwoven. In a city suburb, a young minister arrives to take up duties at a local church. He is persuaded by his assistant to join an Italian night school class, and he soon becomes the centre of a group of people to whom fate has dealt quite serious blows. Gradually each one in the group manages to overcome his/her predicament and find a happy solution. This Dogma production was shown at the Berlinale in 2001 where it surprisingly won a silver medal.",
+          "release_date":"2000-12-07",
+          "genre_ids":[
+             35,
+             18,
+             10749
+          ],
+          "id":112,
+          "original_title":"Italiensk for begyndere",
+          "original_language":"da",
+          "title":"Italian for Beginners",
+          "backdrop_path":"gorJqud7i98mjVfeRwcZ0HbaoR8B.jpg",
+          "popularity":1.639161,
+          "vote_count":10,
+          "video":false,
+          "vote_average":6.3
+       }
+    }
