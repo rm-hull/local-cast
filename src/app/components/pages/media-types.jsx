@@ -1,5 +1,5 @@
 import React from 'react';
-import {MenuItem} from 'material-ui';
+import MenuItem from 'material-ui/lib/menu/menu-item';
 import PageWithNav from './page-with-nav';
 
 export default class MediaTypes extends React.Component {

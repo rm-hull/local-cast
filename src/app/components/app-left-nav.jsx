@@ -1,5 +1,6 @@
 import React from 'react';
-import {MenuItem, LeftNav, Mixins, Styles} from 'material-ui';
+import {LeftNav, Mixins, Styles} from 'material-ui';
+import MenuItem from 'material-ui/lib/menu/menu-item';
 const {Colors, Spacing, Typography} = Styles;
 const {StylePropable} = Mixins;
 
