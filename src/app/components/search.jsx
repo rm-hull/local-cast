@@ -119,7 +119,7 @@ export default class Search extends React.Component {
                   title={<strong>{metadata.title}</strong>}
                   actionIcon={media.matches ? <IconButton><StarBorder color="white"/></IconButton> : <noscript/>}
                   subtitle={metadata.release_date.slice(0, 4)}
-                  titleBackground="rgba(0, 0, 0, 0.7)">
+                  titleBackground="rgba(0, 0, 0, 0.54)">
                   <Link to={`/media/${this.props.type}/${media.id}`}>
                     <Image
                       style={{width: '100%'}}
