@@ -32,7 +32,7 @@
     "watchify": "^3.11.1"
   },
   "dependencies": {
-    "castv2-client": "^1.2.0",
+    "castv2-client": "rm-hull/node-castv2-client",
     "express": "^4.16.4",
     "hiredis": "^0.5.0",
     "history": "~4.9.0",
