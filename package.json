@@ -27,7 +27,7 @@
     "react-addons-linked-state-mixin": "^15.6.2",
     "react-addons-pure-render-mixin": "^15.6.2",
     "require-dir": "^1.2.0",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "vinyl-source-stream": "^2.0.0",
     "watchify": "^3.11.1"
   },
