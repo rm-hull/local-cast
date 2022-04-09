@@ -43,7 +43,7 @@
     "material-ui": "^0.20.2",
     "mdns": "^2.4.0",
     "mime-types": "^2.1.22",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "movie-title": "^1.0.3",
     "moviedb": "^0.2.10",
     "react": "^16.8.6",
