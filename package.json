@@ -20,7 +20,7 @@
     "browser-sync": "^3.0.4",
     "browserify": "^16.2.3",
     "gulp": "^5.0.1",
-    "gulp-notify": "^3.2.0",
+    "gulp-notify": "^5.0.0",
     "gulp-util": "^3.0.8",
     "pretty-hrtime": "^1.0.3",
     "prettyjson": "^1.2.1",
